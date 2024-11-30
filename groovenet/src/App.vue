@@ -58,7 +58,7 @@ export default {
           </header>
     </nav>
 
-    <main class="px-8 py-6 bg-gray-800">
+    <main class="px-8 py-4 bg-gray-800">
       <RouterView />
     </main>
 

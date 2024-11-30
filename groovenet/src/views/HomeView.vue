@@ -1,32 +1,58 @@
 <script setup>
-
+    const underline = '_'.repeat(28);
 </script>
 
 <template>
     <div class="max-w-7xl mx-auto grid grid-cols-4 gap-4 bg-grandient-to-b from-orange-750 to-gray-800">
-        <div class="main-left col-span-1">
-            <div class="p-4 bg-white border border-gray-200 text-center rounded-lg">
-                <img src="https://i.pravatar.cc/300?img=70" class="mb-6 rounded-full">
-                
-                <p><strong>Code With Stein</strong></p>
+        <div class="main-left col-span-1 space-y-8">
+            <div class="p-4 bg-orange-750 text-center rounded-lg">
+                <img src="@/assets/images/profile pictures/epithet-profile-pic.jpg" class="mb-3 rounded-full">
+                <p class='text-orange-200 font-geologica text-2xl'>Epithet of mine</p>
 
-                <div class="mt-6 flex space-x-8 justify-around">
-                    <p class="text-xs text-gray-500">182 friends</p>
-                    <p class="text-xs text-gray-500">120 posts</p>
+                <div>
+                    <div class="mt-4 flex space-x-8 justify-around">
+                        <p class="text-lg font-geologica text-orange-200">86 followers</p>
+                    </div>
+
+                    <p class="text-orange-200">{{ underline }}</p>
+
+                    <div class="mt-4 flex space-x-8 justify-around">
+                        <p class="text-lg text-orange-200 font-geologica">0 LPs</p>
+                        <p class="text-lg text-orange-200 font-geologica">1 EPs</p>
+                        <p class="text-lg text-orange-200 font-geologica">1 single</p>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="p-4 bg-orange-750 text-center rounded-lg">
+                    <p class='text-orange-200 pb-2 font-geologica text-xl text-left'>Friends & collaborators</p>
+
+                    <div class="flex space-x-2">
+                        <div class="w-12 h-12 rounded-full overflow-hidden">
+                            <img src="@/assets/images/profile pictures/morphine-jar-profile-pic.jpg" class="w-full h-full object-cover">
+                        </div>
+
+                        <div class="w-12 h-12 rounded-full overflow-hidden">
+                            <img src="@/assets/images/profile pictures/shrf-profile-pic.png" class="w-full h-full object-cover">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
         <div class="main-center col-span-2 space-y-4">
-            <div class="bg-white border border-gray-200 rounded-lg">
+            <div class="bg-orange-750 rounded-lg">
                 <div class="p-4">  
-                    <textarea class="p-4 w-full bg-gray-100 rounded-lg" placeholder="What are you thinking about?"></textarea>
+                    <form >
+                        <input class="-mb-6 p-3 w-full h-9 rounded-3xl bg-orange-200 text-orange-750  " placeholder=" Post a new thought,announcement or photo" type="text"></input> 
+                    </form>
                 </div>
 
-                <div class="p-4 border-t border-gray-100 flex justify-between">
-                    <a href="#" class="inline-block py-4 px-6 bg-gray-600 text-white rounded-lg">Attach image</a>
+                <div class=" flex ">
+                    <a href="#" class=" py-4 px-6 bg-gray-600 text-white rounded-lg">Attach image</a>
 
-                    <a href="#" class="inline-block py-4 px-6 bg-purple-600 text-white rounded-lg">Post</a>
+                    <a href="#" class=" py-4 px-6 bg-purple-600 text-white rounded-lg">Post</a>
                 </div>
             </div>
 
