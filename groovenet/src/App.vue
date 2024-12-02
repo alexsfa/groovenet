@@ -28,7 +28,7 @@ export default {
                   </form>
                 </div>
 
-                <div class="menu-center pr-40 flex space-x-8">
+                <div class="menu-center pr-60 flex space-x-8">
                       <a href="#">
                         <h1 class="text-orange-400 text-lg font-geologica hover:scale-110 transition-transform">Notifications</h1>
                       </a>
@@ -58,7 +58,7 @@ export default {
           </header>
     </nav>
 
-    <main class="px-8 py-4 bg-gray-800">
+    <main class="px-8 py-6" :class="{ 'bg-gray-800 h-screen': $route.meta.bGray, 'bg-gradient-to-b from-orange-900 to-black h-screen' : !$route.meta.bGray } ">
       <RouterView />
     </main>
 
