@@ -58,7 +58,7 @@ export default {
           </header>
     </nav>
 
-    <main class="px-8 py-6" :class="{ 'bg-gray-800 h-screen': $route.meta.bGray, 'bg-gradient-to-b from-orange-900 to-black h-screen' : !$route.meta.bGray } ">
+    <main class="px-8 py-6" :class="{ 'bg-gray-800 ': $route.meta.bGray, 'bg-gradient-to-b from-orange-900 to-black ' : !$route.meta.bGray } ">
       <RouterView />
     </main>
 
