@@ -16,9 +16,9 @@ export default {
         <header  class="max-w-10xl">
             <div class="flex items-center justify-between">
                 <div class="menu-left items-center flex space-x-8">
-                  <a href="#">
+                  <router-link to="/">
                       <img src="../src/assets/images/Groovenet-logo.png" width="50px" height="50px">
-                  </a>
+                  </router-link>
 
                   <form >
                     <div class="bg-orange-200 rounded-3xl h-9 w-80 flex items-center">
@@ -29,17 +29,17 @@ export default {
                 </div>
 
                 <div class="menu-center pr-60 flex space-x-8">
-                      <a href="#">
+                      <router-link to="/notifications">
                         <h1 class="text-orange-400 text-lg font-geologica hover:scale-110 transition-transform">Notifications</h1>
-                      </a>
+                      </router-link>
 
-                      <a href="#">
-                        <h1 class="text-orange-400 text-lg font-geologica hover:scale-110 transition-transform">Profile</h1>                              
-                      </a>
+                      <router-link to="/profile">
+                        <h1 class="text-orange-400 text-lg font-geologica hover:scale-110 transition-transform">Profile</h1>                                                         
+                      </router-link>
 
-                      <a href="#">
+                      <router-link to="/favorites">
                         <h1 class="text-orange-400 text-lg font-geologica hover:scale-110 transition-transform">Favorites</h1>                              
-                      </a>
+                      </router-link>
 
                       <router-link to="/login">
                         <h1 class="text-orange-400 text-lg font-geologica hover:scale-110 transition-transform">Log out</h1>                                                         
@@ -48,17 +48,18 @@ export default {
                 </div>
 
                 <div class="menu-right pl-12 pr-12 flex items-center justify-between">
+                  <RouterLink to="/upload">
                     <button class="bg-orange-400 w-10 h-11 text-black rounded-xl  hover:bg-orange-750 flex items-center">
                       <img src="../src/assets/icons/upload-svgrepo-com.svg" class="h-9 w-9 pl-1">
                     </button>
-                    <button></button>
+                  </RouterLink>
                 </div>
             
             </div>  
           </header>
     </nav>
 
-    <main class="px-8 py-6" :class="{ 'bg-gray-800 ': $route.meta.bGray, 'bg-gradient-to-b from-orange-900 to-black ' : !$route.meta.bGray } ">
+    <main class="px-8 py-6" :class="{ 'bg-gray-800': $route.meta.bGray, 'bg-gradient-to-b from-orange-900 to-black ' : !$route.meta.bGray } ">
       <RouterView />
     </main>
 

@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <div class="max-w-7xl mx-auto my-auto grid grid-cols-4 gap-4 ">
+    <div class="max-w-7xl mx-auto grid grid-cols-4 gap-4 ">
         <div class="main-left col-span-1 space-y-8  ">
             <div class="p-4 bg-orange-750 text-center rounded-3xl">
                 <img src="@/assets/images/profile pictures/epithet-profile-pic.jpg" class="mb-3 rounded-full">
